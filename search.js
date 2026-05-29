@@ -127,7 +127,6 @@ function performSearch() {
     { title: "Ghost Hours", author: "Sameer Rao", type: "Poetry", url: "content/poem4.html", content: "ghost hours suspended web-like silence hum lonely clock breaths stretch floor boards truths gray light" },
     { title: "Digital Pastoral", author: "Jayesh Chaudhari", type: "Poetry", url: "content/poem5.html", content: "digital pastoral dew silicone leaves copper roots deep fiber-optic forests servers pixels autumn glowworms data river" },
     { title: "Underwater Dreams", author: "Rohan Mehta", type: "Poetry", url: "content/poem6.html", content: "underwater dreams sink surface green sea-moss pane coral spires ocean floor currents float liquid space gravity" },
-    { title: "The Quiet Path", author: "Krish", type: "Poetry", url: "content/krish.html", content: "quiet path road bends shadow elm streetlights stars reign realm midnight wind stone waters" },
     { title: "The Librarian's Rebellion", author: "Nisha Singh", type: "Fiction", url: "content/story2.html", content: "librarian rebellion book shifting text library quiet archives dusting volume history dates altered" },
     { title: "Echoes of the City", author: "Nandini", type: "Fiction", url: "content/nandini.html", content: "echoes city speaks whispers early morning traffic spires concrete peace avenue streetlights reflection street sweeper stillness" }
   ];
