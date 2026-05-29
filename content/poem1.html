@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="description" content="'The Dusk Sings' by Ananya Roy — A meditation on twilight and the poetry of everyday moments. Free verse poetry from the Litverse collection.">
+  <meta name="keywords" content="poetry, free verse, twilight, nature poetry, Ananya Roy, dusk, contemplative poetry">
+  <meta name="author" content="Ananya Roy">
+  <meta name="theme-color" content="#000000">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Pirata+One&display=swap" rel="stylesheet">
+  
+  <!-- Global Styles -->
+  <link rel="stylesheet" href="../styles.css">
+  <script src="../search.js"></script>
+  <script src="../barba.js"></script>
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="The Dusk Sings — by Ananya Roy">
+  <meta property="og:description" content="A meditation on twilight that transforms the ordinary into the sublime.">
+  <meta property="article:author" content="Ananya Roy">
+  <meta property="article:section" content="Poetry">
+  
+  <title>The Dusk Sings — by Ananya Roy</title>
+</head>
+<body spellcheck="false">
+  <!-- Mobile-optimized SVG background with darker palette -->
+  <svg style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -2; pointer-events: none;">
+    <defs>
+      <!-- Dark ash grid pattern -->
+      <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+        <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#555" stroke-width="0.8" opacity="0.4"/>
+      </pattern>
+      
+      <!-- Dark ash grain filter -->
+      <filter id="grain">
+        <feTurbulence baseFrequency="0.7" numOctaves="2">
+          <animate attributeName="seed" values="0;100" dur="6s" repeatCount="indefinite"/>
+        </feTurbulence>
+        <feColorMatrix type="saturate" values="0"/>
+        <feComponentTransfer>
+          <feFuncA type="linear" slope="0.2"/>
+        </feComponentTransfer>
+      </filter>
+    </defs>
+    
+    <!-- Dark ash background -->
+    <rect width="100%" height="100%" fill="#2a2a2a"/>
+    <rect width="100%" height="100%" fill="url(#grid)"/>
+    <rect width="100%" height="100%" fill="#333" filter="url(#grain)" opacity="0.3"/>
+  </svg>
+
+  <header>
+    <br>
+    <center>
+      <h1>
+        <a href="index.html" style="text-decoration:none; color:inherit;">
+          <font color="#e8e8e8">L &nbsp; I &nbsp; T &nbsp; V &nbsp; E &nbsp; R &nbsp; S &nbsp; E</font>
+        </a>
+      </h1>
+      <!-- Minimalist horizontal line -->
+      <svg width="200" height="1" viewBox="0 0 200 1">
+        <line x1="0" y1="0" x2="200" y2="0" stroke="#999" stroke-width="1"/>
+      </svg>
+      <br>
+      <nav style="display: flex; align-items: center; justify-content: center; gap: 20px;">
+        <p><font color="#e8e8e8"><a href="../index.html"><font color="#ccc">Home</font></a> · <a href="../read.html"><font color="#ccc">Read</font></a> · <a href="../write.html"><font color="#ccc">Write</font></a></font></p>
+        <!-- Apple-style search bar -->
+        <div style="display: flex; align-items: center;">
+          <div id="searchIcon" onclick="toggleSearch()" style="cursor: pointer; padding: 8px;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <circle cx="11" cy="11" r="8" stroke="#e8e8e8" stroke-width="2"/>
+              <path d="m21 21-4.35-4.35" stroke="#e8e8e8" stroke-width="2"/>
+            </svg>
+          </div>
+          <div id="searchBar" style="display: none; position: absolute; background: rgba(42,42,42,0.95); border: 1px solid #d0d0d0; border-radius: 20px; padding: 8px 15px; margin-left: 30px;">
+            <input type="text" id="searchInput" placeholder="" style="background: transparent; border: none; color: #e8e8e8; outline: none; width: 200px; font-family: 'Josefin Sans', sans-serif;" onkeyup="performSearch()" onblur="hideSearch()">
+          </div>
+        </div>
+      </nav>
+    </center>
+    <br>
+  </header>
+
+  <main>
+    <!-- 3-column layout: 20% left spacer | 60% content | 20% right spacer -->
+    <table width="100%" cellspacing="0" cellpadding="0" border="0">
+      <tr>
+        <td width="20%"></td>
+        <td width="60%">
+          
+          <article>
+            <header>
+              <div style="margin-left:25px;">
+                <h1><font color="#e8e8e8">The Dusk Sings</font></h1>
+                <p><font color="#d0d0d0">by Ananya Roy</font></p>
+              </div>
+            </header>
+
+            <section>
+              <table border="0" cellpadding="25" cellspacing="0" width="100%">
+                <tr>
+                  <td>
+                    <div style="margin: 2em 0; line-height: 1.8;">
+                      <p><font color="#d0d0d0">The dusk sings in colors not taught in school.<br>
+                         A hush spreads on rooftops,<br>
+                         while birds draw shadows with invisible ink.</font></p>
+
+                      <p><font color="#d0d0d0">The city forgets to blink,<br>
+                         caught in the throat of a sky<br>
+                         humming lullabies to no one.</font></p>
+
+                      <p><font color="#d0d0d0">Windows become amber squares of warmth,<br>
+                         each one a story refusing<br>
+                         to be told too quickly.</font></p>
+
+                      <p><font color="#d0d0d0">And in the space between<br>
+                         streetlight and starlight,<br>
+                         I discover the dialect of dusk—</font></p>
+
+                      <p><font color="#d0d0d0">a language written in the slant<br>
+                         of shadows, spoken in the pause<br>
+                         before night claims its inheritance.</font></p>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </section>
+
+            <section>
+              <table border="0" cellpadding="15" cellspacing="0" width="100%">
+                <tr>
+                  <td>
+                    <div style="margin-left:25px;">
+                      <p><font color="#d0d0d0"><strong>Ananya Roy</strong> writes poetry that finds the extraordinary in everyday moments. Her work has appeared in various literary journals, and she teaches creative writing workshops focusing on observational poetry and mindful attention to language.</font></p>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </section>
+          </article>
+          
+        </td>
+        <td width="20%"></td>
+      </tr>
+    </table>
+  </main>
+
+  <footer>
+    <br>
+    <center>
+      <!-- Elegant horizontal line -->
+      <svg width="300" height="2" viewBox="0 0 300 2">
+        <line x1="0" y1="1" x2="300" y2="1" stroke="#666" stroke-width="1"/>
+      </svg>
+    </center>
+    <br>
+    <center>
+      <h1 style="font-family:'Pirata One',cursive; font-weight:normal; letter-spacing:0.1em; margin:0;">
+        <a href="index.html" style="text-decoration:none; color:inherit; display:inline-block; width:100%;">
+          <font color="#e8e8e8">L &nbsp; I &nbsp; T &nbsp; V &nbsp; E &nbsp; R &nbsp; S &nbsp; E</font>
+        </a>
+      </h1>
+      <p style="font-family:'Josefin Sans',sans-serif; font-weight:300;"><font color="#d0d0d0"><a href="index.html"><font color="#ccc">Home</font></a> · <a href="read.html"><font color="#ccc">Read</font></a> · <a href="write.html"><font color="#ccc">Write</font></a></font></p>
+      <p style="font-family:'Josefin Sans',sans-serif; font-weight:300;"><font color="#d0d0d0">Words without boundaries</font></p>
+      <p style="font-family:'Josefin Sans',sans-serif; font-weight:300;"><font color="#aaa"><small>Lightweight · Est. 2025</small></font></p>
+    </center>
+    <br>
+  </footer>
+
+</body>
+</html>

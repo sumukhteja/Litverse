@@ -1,0 +1,102 @@
+/* Litverse Global Styles */
+
+/* Scale everything to appear 150% larger */
+html {
+    font-size: 150%; /* Base font size at 150% for desktop */
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 100%; /* Normal size for mobile */
+  }
+}
+
+/* Apply Josefin Sans to the entire body with lighter weight */
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+}
+
+/* Main headings with Pirata One for dramatic effect */
+h1 {
+    font-family: 'Pirata One', cursive;
+    font-weight: normal;
+}
+
+/* Keep other headings with Josefin Sans but lighter */
+h2, h3, h4, h5, h6 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+}
+
+/* Navigation and links */
+nav, nav a {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+}
+
+/* Ensure all text elements use Josefin Sans with lighter weight */
+p, div, span, td, th, li, dt, dd {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+}
+
+/* Font weights for emphasis */
+strong, b {
+    font-weight: 500;
+}
+
+em, i {
+    font-style: italic;
+    font-weight: 300;
+}
+
+/* Small text styling */
+small {
+    font-size: 0.9em;
+    font-weight: 300;
+}
+
+/* Force font families with higher specificity */
+font {
+    font-family: inherit !important;
+}
+
+/* Ensure all other footer text uses Josefin Sans */
+footer p, footer p font, footer a, footer a font, footer small {
+    font-family: 'Josefin Sans', sans-serif !important;
+    font-weight: 300 !important;
+}
+
+/* Ensure footer h1 and all its children use Pirata One (must come after the above rule) */
+footer h1, footer h1 font, footer h1 a, footer h1 a font {
+    font-family: 'Pirata One', cursive !important;
+    font-weight: normal !important;
+}
+
+/* Remove link underlines and disable spell-check indicators */
+a {
+    text-decoration: none !important;
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+a:visited {
+    text-decoration: none !important;
+}
+
+a:active {
+    text-decoration: none !important;
+}
+
+/* Disable browser spell-check indicators */
+* {
+    -webkit-text-decoration-skip: none;
+    text-decoration-skip: none;
+}
+
+input, textarea {
+    outline: none;
+}

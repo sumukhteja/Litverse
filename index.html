@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="description" content="Litverse — A minimalist sanctuary for literature. Read. Write. Share.">
+  <meta name="author" content="Litverse">
+  <meta name="theme-color" content="#000000">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Pirata+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="search.js"></script>
+  <script src="barba.js"></script>
+  <title>Litverse</title>
+</head>
+<body spellcheck="false">
+  <!-- Mobile-optimized SVG background with darker palette -->
+  <svg style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -2; pointer-events: none;">
+    <defs>
+      <!-- Dark ash grid pattern -->
+      <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+        <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#555" stroke-width="0.8" opacity="0.4"/>
+      </pattern>
+      
+      <!-- Dark ash grain filter -->
+      <filter id="grain">
+        <feTurbulence baseFrequency="0.7" numOctaves="2">
+          <animate attributeName="seed" values="0;100" dur="6s" repeatCount="indefinite"/>
+        </feTurbulence>
+        <feColorMatrix type="saturate" values="0"/>
+        <feComponentTransfer>
+          <feFuncA type="linear" slope="0.2"/>
+        </feComponentTransfer>
+      </filter>
+    </defs>
+    
+    <!-- Dark ash background -->
+    <rect width="100%" height="100%" fill="#2a2a2a"/>
+    <rect width="100%" height="100%" fill="url(#grid)"/>
+    <rect width="100%" height="100%" fill="#333" filter="url(#grain)" opacity="0.3"/>
+  </svg>
+
+  <header>
+    <br>
+    <center>
+      <h1>
+        <a href="index.html" style="text-decoration:none; color:inherit;">
+          <font color="#e8e8e8">L &nbsp; I &nbsp; T &nbsp; V &nbsp; E &nbsp; R &nbsp; S &nbsp; E</font>
+        </a>
+      </h1>
+      
+      <!-- Minimalist horizontal line -->
+      <svg width="200" height="1" viewBox="0 0 200 1">
+        <line x1="0" y1="0" x2="200" y2="0" stroke="#999" stroke-width="1"/>
+      </svg>
+      
+      <br>
+      
+      <nav style="display: flex; align-items: center; justify-content: center; gap: 20px;">
+        <p><font color="#e8e8e8"><strong>Home</strong> · <a href="read.html"><font color="#ccc">Read</font></a> · <a href="write.html"><font color="#ccc">Write</font></a></font></p>
+        
+        <!-- Apple-style search bar -->
+        <div style="display: flex; align-items: center;">
+          <div id="searchIcon" onclick="toggleSearch()" style="cursor: pointer; padding: 8px;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <circle cx="11" cy="11" r="8" stroke="#e8e8e8" stroke-width="2"/>
+              <path d="m21 21-4.35-4.35" stroke="#e8e8e8" stroke-width="2"/>
+            </svg>
+          </div>
+          <div id="searchBar" style="display: none; position: absolute; background: rgba(42,42,42,0.95); border: 1px solid #d0d0d0; border-radius: 20px; padding: 8px 15px; margin-left: 30px;">
+            <input type="text" id="searchInput" placeholder="" style="background: transparent; border: none; color: #e8e8e8; outline: none; width: 200px; font-family: 'Josefin Sans', sans-serif;" onkeyup="performSearch()" onblur="hideSearch()">
+          </div>
+        </div>
+      </nav>
+    </center>
+    
+    <br>
+  </header>
+
+  <main>
+    <!-- 3-column layout: 20% left spacer | 60% content | 20% right spacer -->
+    <table width="100%" cellspacing="0" cellpadding="0" border="0">
+      <tr>
+        <td width="20%"></td>
+        <td width="60%">
+          
+          <section>
+            <center><p><font color="#e8e8e8">We publish poetry and fiction. No algorithms. No noise. Just human expression in its purest form.</font></p></center>
+          </section>
+
+          <section>
+            
+            <!-- 2-column layout for Read/Write -->
+            <table width="100%" cellspacing="15" cellpadding="0">
+              <tr>
+                <td width="50%" valign="top">
+                  <table border="1" bordercolor="#d0d0d0" cellpadding="15" cellspacing="0" width="100%">
+                    <tr>
+                      <td>
+                        <center><h3><a href="read.html"><font color="#e8e8e8">Read</font></a></h3></center>
+                        <center><p><font color="#d0d0d0">Discover carefully curated poetry and fiction from writers around the world.</font></p></center>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                
+                <td width="50%" valign="top">
+                  <table border="1" bordercolor="#d0d0d0" cellpadding="15" cellspacing="0" width="100%">
+                    <tr>
+                      <td>
+                        <center><h3><a href="write.html"><font color="#e8e8e8">Write</font></a></h3></center>
+                        <center><p><font color="#d0d0d0">Submit your poetry or fiction. Let your voice and echoes be heard.</font></p></center>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </section>
+
+          <section>
+            <center>
+              <table border="1" bordercolor="#d0d0d0" cellpadding="15" cellspacing="0" width="60%">
+                <tr>
+                  <td>
+                    <center>
+                      <h2><font color="#e8e8e8">why litverse?</font></h2>
+                      <p><font color="#d0d0d0">No tracking or data collection</font></p>
+                      <p><font color="#d0d0d0">Human-curated content</font></p>
+                      <p><font color="#d0d0d0">Anonymous expression welcome</font></p>
+                      <p><font color="#d0d0d0">Fast, accessible, timeless</font></p>
+                    </center>
+                  </td>
+                </tr>
+              </table>
+            </center>
+          </section>
+          
+        </td>
+        <td width="20%"></td>
+      </tr>
+    </table>
+  </main>
+
+  <footer>
+    <br>
+    <center>
+      <!-- Elegant horizontal line -->
+      <svg width="300" height="2" viewBox="0 0 300 2">
+        <line x1="0" y1="1" x2="300" y2="1" stroke="#666" stroke-width="1"/>
+      </svg>
+    </center>
+    <br>
+    <center>
+      <h1 style="font-family:'Pirata One',cursive; font-weight:normal; letter-spacing:0.1em; margin:0;">
+        <a href="index.html" style="text-decoration:none; color:inherit; display:inline-block; width:100%;">
+          <font color="#e8e8e8">L &nbsp; I &nbsp; T &nbsp; V &nbsp; E &nbsp; R &nbsp; S &nbsp; E</font>
+        </a>
+      </h1>
+      <p style="font-family:'Josefin Sans',sans-serif; font-weight:300;"><font color="#d0d0d0"><a href="index.html"><font color="#ccc">Home</font></a> · <a href="read.html"><font color="#ccc">Read</font></a> · <a href="write.html"><font color="#ccc">Write</font></a></font></p>
+      <p style="font-family:'Josefin Sans',sans-serif; font-weight:300;"><font color="#d0d0d0">Words without boundaries</font></p>
+      <p style="font-family:'Josefin Sans',sans-serif; font-weight:300;"><font color="#aaa"><small>Lightweight · Est. 2025</small></font></p>
+    </center>
+    <br>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="description" content="'The Thirteenth Window' by Arun Dev — A precise, unsettling tale about an architectural impossibility and the nature of perception. Speculative fiction from Litverse.">
+  <meta name="keywords" content="short story, speculative fiction, Arun Dev, windows, perception, reality, impossible architecture">
+  <meta name="author" content="Arun Dev">
+  <meta name="theme-color" content="#000000">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Pirata+One&display=swap" rel="stylesheet">
+  
+  <!-- Global Styles -->
+  <link rel="stylesheet" href="../styles.css">
+  <script src="../search.js"></script>
+  <script src="../barba.js"></script>
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="The Thirteenth Window — by Arun Dev">
+  <meta property="og:description" content="When an impossible window appears, reality begins to question itself.">
+  <meta property="article:author" content="Arun Dev">
+  <meta property="article:section" content="Fiction">
+  
+  <title>The Thirteenth Window — Litverse</title>
+</head>
+<body spellcheck="false">
+  <!-- Mobile-optimized SVG background with darker palette -->
+  <svg style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -2; pointer-events: none;">
+    <defs>
+      <!-- Dark ash grid pattern -->
+      <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+        <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#555" stroke-width="0.8" opacity="0.4"/>
+      </pattern>
+      
+      <!-- Dark ash grain filter -->
+      <filter id="grain">
+        <feTurbulence baseFrequency="0.7" numOctaves="2">
+          <animate attributeName="seed" values="0;100" dur="6s" repeatCount="indefinite"/>
+        </feTurbulence>
+        <feColorMatrix type="saturate" values="0"/>
+        <feComponentTransfer>
+          <feFuncA type="linear" slope="0.2"/>
+        </feComponentTransfer>
+      </filter>
+    </defs>
+    
+    <!-- Dark ash background -->
+    <rect width="100%" height="100%" fill="#2a2a2a"/>
+    <rect width="100%" height="100%" fill="url(#grid)"/>
+    <rect width="100%" height="100%" fill="#333" filter="url(#grain)" opacity="0.3"/>
+  </svg>
+
+  <header>
+    <br>
+    <center>
+      <h1>
+        <a href="index.html" style="text-decoration:none; color:inherit;">
+          <font color="#e8e8e8">L &nbsp; I &nbsp; T &nbsp; V &nbsp; E &nbsp; R &nbsp; S &nbsp; E</font>
+        </a>
+      </h1>
+      
+      <!-- Minimalist horizontal line -->
+      <svg width="200" height="1" viewBox="0 0 200 1">
+        <line x1="0" y1="0" x2="200" y2="0" stroke="#999" stroke-width="1"/>
+      </svg>
+      
+      <br>
+      
+      <nav style="display: flex; align-items: center; justify-content: center; gap: 20px;">
+        <p><font color="#e8e8e8"><a href="../index.html"><font color="#ccc">Home</font></a> · <a href="../read.html"><font color="#ccc">Read</font></a> · <a href="../write.html"><font color="#ccc">Write</font></a></font></p>
+        
+        <!-- Apple-style search bar -->
+        <div style="display: flex; align-items: center;">
+          <div id="searchIcon" onclick="toggleSearch()" style="cursor: pointer; padding: 8px;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <circle cx="11" cy="11" r="8" stroke="#e8e8e8" stroke-width="2"/>
+              <path d="m21 21-4.35-4.35" stroke="#e8e8e8" stroke-width="2"/>
+            </svg>
+          </div>
+          <div id="searchBar" style="display: none; position: absolute; background: rgba(42,42,42,0.95); border: 1px solid #d0d0d0; border-radius: 20px; padding: 8px 15px; margin-left: 30px;">
+            <input type="text" id="searchInput" placeholder="" style="background: transparent; border: none; color: #e8e8e8; outline: none; width: 200px; font-family: 'Josefin Sans', sans-serif;" onkeyup="performSearch()" onblur="hideSearch()">
+          </div>
+        </div>
+      </nav>
+    </center>
+    
+    <br>
+  </header>
+
+  <main>
+    <a id="top"></a>
+    
+    <!-- 3-column layout: 20% left spacer | 60% content | 20% right spacer -->
+    <table width="100%" cellspacing="0" cellpadding="0" border="0">
+      <tr>
+        <td width="20%"></td>
+        <td width="60%">
+          
+          <article>
+            <header>
+              <center>
+                <h1><font color="#e8e8e8">The Thirteenth Window</font></h1>
+                <p><font color="#d0d0d0">by Arun Dev</font></p>
+              </center>
+            </header>
+
+            <section id="chapter1">
+              <h4 style="text-align: left; margin-bottom: 10px;"><font color="#888">Chapter 1: The Discovery</font></h4>
+              <table border="1" bordercolor="#d0d0d0" cellpadding="25" cellspacing="0" width="100%">
+                <tr>
+                  <td>
+                    <p><font color="#d0d0d0">There were twelve windows in the tower — always had been. So when a thirteenth appeared overnight, the architect did what any reasonable person would do: he pretended not to see it.</font></p>
+
+                    <p><font color="#d0d0d0">Dr. Sarah Chen had designed the Meridian Tower herself, had overseen every stage of its construction, had walked its floors countless times during the three years it took to complete. Twelve windows per floor, forty-seven floors, plus the observation deck. The mathematics were burned into her memory like childhood multiplication tables.</font></p>
+
+                    <p><font color="#d0d0d0">But standing on the forty-second floor, clipboard in hand for the quarterly safety inspection, she counted thirteen windows on the east wall.</font></p>
+
+                    <p><font color="#d0d0d0">The thirteenth window was unremarkable in every way except for its existence. Same brushed steel frame as the others, same polarized glass, same view of the city spreading toward the horizon like a circuit board. It fit so perfectly into the wall's rhythm that it seemed to have always been there, which was precisely what made it impossible.</font></p>
+
+                    <p><font color="#d0d0d0">Sarah approached the window with the careful steps of someone testing the reality of the ground beneath their feet. She placed her palm against the glass. Cool. Solid. The kind of real that couldn't be argued with.</font></p>
+
+                    <p><font color="#d0d0d0">She pulled out her phone and called her foreman.</font></p>
+
+                    <p><font color="#d0d0d0">"Mitchell, I need you to check something for me. Forty-second floor, east wall. How many windows do you count?"</font></p>
+
+                    <p><font color="#d0d0d0">A pause. The sound of footsteps, then: "Twelve, Doc. Same as always. Why?"</font></p>
+
+                    <p><font color="#d0d0d0">Sarah looked at the thirteen windows arranged before her like a riddle written in glass and steel. "No reason. Thanks."</font></p>
+
+                    <p><font color="#d0d0d0">She hung up and stood very still, the way people do when they realize they might be losing their mind.</font></p>
+                  </td>
+                </tr>
+              </table>
+            </section>
+            <br>
+
+            <section id="chapter2">
+              <h4 style="text-align: left; margin-bottom: 10px;"><font color="#888">Chapter 2: The Vision</font></h4>
+              <table border="1" bordercolor="#d0d0d0" cellpadding="25" cellspacing="0" width="100%">
+                <tr>
+                  <td>
+                    <p><font color="#d0d0d0">The thirteenth window showed her things that the other twelve did not.</font></p>
+
+                    <p><font color="#d0d0d0">Sarah discovered this by accident, or perhaps the window discovered her. She had returned the next day with measuring tape and a laser level, armed with the desperate precision of someone trying to prove themselves sane. But as she approached the impossible window, she noticed that its view was... off.</font></p>
+
+                    <p><font color="#d0d0d0">The other windows showed the expected cityscape: office buildings and apartment complexes, the river cutting through downtown like a silver scar, traffic moving in predictable patterns along familiar streets. But the thirteenth window showed the same geography wearing a different expression.</font></p>
+
+                    <p><font color="#d0d0d0">The buildings were the same buildings, but older somehow. Or newer. Or built by people with subtly different ideas about how buildings should be built. The streets curved where they should have been straight, intersected in ways that created neighborhoods she didn't recognize despite forty years of living in this city.</font></p>
+
+                    <p><font color="#d0d0d0">And the people.</font></p>
+
+                    <p><font color="#d0d0d0">Sarah pressed her face to the glass, watching figures move through the alternate cityscape below. They wore clothes that seemed both retro and futuristic, walked with purposes that felt familiar yet foreign. A woman in a red coat stopped directly below and looked up, as if she could sense Sarah watching from forty-two floors above.</font></p>
+
+                    <p><font color="#d0d0d0">The woman raised her hand in a gesture that might have been a wave, might have been a warning.</font></p>
+
+                    <p><font color="#d0d0d0">Sarah jerked back from the window, heart hammering. When she looked again, the woman was gone. The city below had returned to its normal configuration of steel and glass and predictable geometry.</font></p>
+
+                    <p><font color="#d0d0d0">But the red coat remained, crumpled and empty on a sidewalk that didn't exist.</font></p>
+
+                    <p><font color="#d0d0d0">Sarah began visiting the thirteenth window daily, then twice daily, then whenever she could fabricate a reason to be on the forty-second floor. She brought a camera, but it captured only ordinary views of the ordinary city. She brought colleagues, but they saw only twelve windows and worried about her increasing obsession with what they called "phantom architecture."</font></p>
+
+                    <p><font color="#d0d0d0">The window showed her glimpses of other possibilities. A version of the city where the river ran north instead of south. Where her tower had never been built, and forests grew where downtown should be. Where the same streets carried different names and different histories.</font></p>
+
+                    <p><font color="#d0d0d0">Some days the window showed her the past — the city as it had been before she was born, before anyone she knew was born. Other days it showed possible futures: the buildings aging gracefully, or crumbling, or transforming into structures that followed architectural principles she couldn't understand.</font></p>
+
+                    <p><font color="#d0d0d0">And sometimes, increasingly often, it showed her people looking back.</font></p>
+
+                    <p><font color="#d0d0d0">Figures standing at windows in buildings that didn't exist, gazing through glass that wasn't there, waving at someone they couldn't see but somehow knew was watching. Sarah began to understand that the thirteenth window wasn't just showing her other versions of the city.</font></p>
+
+                    <p><font color="#d0d0d0">It was connecting her to other versions of herself.</font></p>
+                  </td>
+                </tr>
+              </table>
+            </section>
+            <br>
+
+            <section id="chapter3">
+              <h4 style="text-align: left; margin-bottom: 10px;"><font color="#888">Chapter 3: The Truth</font></h4>
+              <table border="1" bordercolor="#d0d0d0" cellpadding="25" cellspacing="0" width="100%">
+                <tr>
+                  <td>
+
+                    <p><font color="#d0d0d0">The revelation came on a Tuesday morning when the light was particularly clear and the thirteenth window was feeling especially cooperative. Sarah was watching a version of the city where her tower had been built ten degrees to the left, creating a slightly different angle of shadows on the street below.</font></p>
+
+                    <p><font color="#d0d0d0">And there, on the forty-second floor of that other tower, standing at what would be the thirteenth window if that tower had one, was another woman with Sarah's face, her graying hair, her architect's habit of squinting at buildings as if checking their structural integrity by sight alone.</font></p>
+
+                    <p><font color="#d0d0d0">The other Sarah was also looking through a window. Was also seeing something that shouldn't be there. Was also watching a version of herself watch a version of herself in an infinite regression of possibilities.</font></p>
+
+                    <p><font color="#d0d0d0">They raised their hands simultaneously — a greeting, a recognition, a goodbye to the certainty that reality was singular and fixed.</font></p>
+
+                    <p><font color="#d0d0d0">And Sarah understood, with the clarity that comes only in moments of complete impossibility, that the thirteenth window hadn't appeared in her tower.</font></p>
+
+                    <p><font color="#d0d0d0">She had appeared in its tower.</font></p>
+
+                    <br>
+                    
+                    <!-- Elegant horizontal line -->
+                    <center>
+                      <svg width="200" height="1" viewBox="0 0 200 1">
+                        <line x1="0" y1="0" x2="200" y2="0" stroke="#666" stroke-width="1"/>
+                      </svg>
+                    </center>
+                    
+                    <br>
+
+                    <p><font color="#d0d0d0">Sarah stopped visiting the forty-second floor. Not because she stopped believing in the thirteenth window, but because she finally understood what it was showing her: the truth that every building, every city, every life exists in countless variations, separated by nothing more than the thickness of glass and the limitations of what we're willing to see.</font></p>
+
+                    <p><font color="#d0d0d0">The window was still there, of course. It would always be there, waiting for the next person who needed to know that reality was larger and stranger and more negotiable than they had imagined.</font></p>
+
+                    <p><font color="#d0d0d0">But Mitchell still counted twelve windows on the forty-second floor.</font></p>
+
+                    <p><font color="#d0d0d0">And Sarah, who had spent her career building things that couldn't fall down, learned to live with the knowledge that everything was always falling, all the time, into infinite possible versions of itself.</font></p>
+
+                    <p><font color="#d0d0d0">The only difference was whether you were watching through the right window to see it happen.</font></p>
+                  </td>
+                </tr>
+              </table>
+            </section>
+          </article>
+          
+        </td>
+        <td width="20%">
+          <!-- Move to Top button in right column -->
+          <div style="position: sticky; top: 50%; margin-left: 20px;">
+            <table cellpadding="8" cellspacing="0" style="background-color: rgba(42,42,42,0.9);">
+              <tr>
+                <td>
+                  <center><a href="#top" style="text-decoration: none; font-weight: normal; text-transform: none; font-size: 1em;"><font color="#e8e8e8">↑ top</font></a></center>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </main>
+
+  <!-- Analysis and Footer sections in centered layout -->
+  <br>
+  
+  <table width="100%" cellspacing="0" cellpadding="0" border="0">
+    <tr>
+      <td width="20%"></td>
+      <td width="60%">
+        
+        <section>
+          <center>
+            <div style="padding: 15px 0; width: 60%; margin: 0 auto;">
+              <center>
+                <h3><font color="#e8e8e8">about the author</font></h3>
+                <p><font color="#d0d0d0">Arun Dev writes speculative fiction that explores the boundaries between the possible and the actual. His work often features architects, engineers, and other builders who discover that the world is less stable than their blueprints suggest. He lives in a city with exactly the number of windows it's supposed to have.</font></p>
+              </center>
+            </div>
+          </center>
+        </section>
+        
+      </td>
+      <td width="20%"></td>
+    </tr>
+  </table>
+
+  <footer>
+    <br>
+    <center>
+      <!-- Elegant horizontal line -->
+      <svg width="300" height="2" viewBox="0 0 300 2">
+        <line x1="0" y1="1" x2="300" y2="1" stroke="#666" stroke-width="1"/>
+      </svg>
+    </center>
+    <br>
+    <center>
+      <h1 style="font-family:'Pirata One',cursive; font-weight:normal; letter-spacing:0.1em; margin:0;">
+        <a href="index.html" style="text-decoration:none; color:inherit; display:inline-block; width:100%;">
+          <font color="#e8e8e8">L &nbsp; I &nbsp; T &nbsp; V &nbsp; E &nbsp; R &nbsp; S &nbsp; E</font>
+        </a>
+      </h1>
+      <p style="font-family:'Josefin Sans',sans-serif; font-weight:300;"><font color="#d0d0d0"><a href="index.html"><font color="#ccc">Home</font></a> · <a href="read.html"><font color="#ccc">Read</font></a> · <a href="write.html"><font color="#ccc">Write</font></a></font></p>
+      <p style="font-family:'Josefin Sans',sans-serif; font-weight:300;"><font color="#d0d0d0">Words without boundaries</font></p>
+      <p style="font-family:'Josefin Sans',sans-serif; font-weight:300;"><font color="#aaa"><small>Lightweight · Est. 2025</small></font></p>
+    </center>
+    <br>
+  </footer>
+
+</body>
+</html>

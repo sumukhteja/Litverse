@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="description" content="Read poetry and fiction on Litverse — Curated literary works from writers around the world.">
+  <meta name="author" content="Litverse">
+  <meta name="theme-color" content="#000000">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Pirata+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="search.js"></script>
+  <script src="barba.js"></script>
+  <title>Read — Litverse</title>
+</head>
+<body spellcheck="false">
+  <a id="top"></a>
+  <!-- Mobile-optimized SVG background with darker palette -->
+  <svg style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -2; pointer-events: none;">
+    <defs>
+      <!-- Dark ash grid pattern -->
+      <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+        <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#555" stroke-width="0.8" opacity="0.4"/>
+      </pattern>
+      
+      <!-- Dark ash grain filter -->
+      <filter id="grain">
+        <feTurbulence baseFrequency="0.7" numOctaves="2">
+          <animate attributeName="seed" values="0;100" dur="6s" repeatCount="indefinite"/>
+        </feTurbulence>
+        <feColorMatrix type="saturate" values="0"/>
+        <feComponentTransfer>
+          <feFuncA type="linear" slope="0.2"/>
+        </feComponentTransfer>
+      </filter>
+    </defs>
+    
+    <!-- Dark ash background -->
+    <rect width="100%" height="100%" fill="#2a2a2a"/>
+    <rect width="100%" height="100%" fill="url(#grid)"/>
+    <rect width="100%" height="100%" fill="#333" filter="url(#grain)" opacity="0.3"/>
+  </svg>
+
+  <header>
+    <br>
+    <center>
+      <h1>
+        <a href="index.html" style="text-decoration:none; color:inherit;">
+          <font color="#e8e8e8">L &nbsp; I &nbsp; T &nbsp; V &nbsp; E &nbsp; R &nbsp; S &nbsp; E</font>
+        </a>
+      </h1>
+      
+      <!-- Minimalist horizontal line -->
+      <svg width="200" height="1" viewBox="0 0 200 1">
+        <line x1="0" y1="0" x2="200" y2="0" stroke="#999" stroke-width="1"/>
+      </svg>
+      
+      <br>
+      
+      <nav style="display: flex; align-items: center; justify-content: center; gap: 20px;">
+        <p><font color="#e8e8e8"><a href="index.html"><font color="#ccc">Home</font></a> · <strong>Read</strong> · <a href="write.html"><font color="#ccc">Write</font></a></font></p>
+        
+        <!-- Apple-style search bar -->
+        <div style="display: flex; align-items: center;">
+          <div id="searchIcon" onclick="toggleSearch()" style="cursor: pointer; padding: 8px;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <circle cx="11" cy="11" r="8" stroke="#e8e8e8" stroke-width="2"/>
+              <path d="m21 21-4.35-4.35" stroke="#e8e8e8" stroke-width="2"/>
+            </svg>
+          </div>
+          <div id="searchBar" style="display: none; position: absolute; background: rgba(42,42,42,0.95); border: 1px solid #d0d0d0; border-radius: 20px; padding: 8px 15px; margin-left: 30px;">
+            <input type="text" id="searchInput" placeholder="" style="background: transparent; border: none; color: #e8e8e8; outline: none; width: 200px; font-family: 'Josefin Sans', sans-serif;" onkeyup="performSearch()" onblur="hideSearch()">
+          </div>
+        </div>
+      </nav>
+    </center>
+    <br>
+  </header>
+
+  <main>
+    <!-- 3-column layout: 15% left spacer | 70% content | 15% right spacer -->
+    <table width="100%" cellspacing="0" cellpadding="0" border="0">
+      <tr>
+        <td width="15%"></td>
+        <td width="70%">
+          
+          <section>
+            <center>
+              <h2><font color="#e8e8e8">poetry</font></h2>
+            </center>
+            
+            <!-- 3x3 Poetry Grid -->
+            <table width="100%" cellspacing="15" cellpadding="0">
+              <tr>
+                <td width="33%" valign="top">
+                  <table border="1" bordercolor="#d0d0d0" cellpadding="15" cellspacing="0" width="100%">
+                    <tr>
+                      <td>
+                        <h3><font color="#e8e8e8"><a href="content/poem1.html"><font color="#e8e8e8">The Dusk Sings</font></a></font></h3>
+                        <p><font color="#aaa">by Ananya Roy</font></p>
+                        <p><font color="#d0d0d0">A meditation on twilight that transforms the ordinary into the sublime...</font></p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                
+                <td width="33%" valign="top">
+                  <table border="1" bordercolor="#d0d0d0" cellpadding="15" cellspacing="0" width="100%">
+                    <tr>
+                      <td>
+                        <h3><font color="#e8e8e8"><a href="content/poem2.html"><font color="#e8e8e8">City Rain</font></a></font></h3>
+                        <p><font color="#aaa">by Manav Lal</font></p>
+                        <p><font color="#d0d0d0">Urban rhythms meet natural percussion in this exploration of metropolitan weather...</font></p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                
+                <td width="33%" valign="top">
+                  <table border="1" bordercolor="#d0d0d0" cellpadding="15" cellspacing="0" width="100%">
+                    <tr>
+                      <td>
+                        <h3><font color="#e8e8e8"><a href="content/poem3.html"><font color="#e8e8e8">Letters to Time</font></a></font></h3>
+                        <p><font color="#aaa">by Esha Kapoor</font></p>
+                        <p><font color="#d0d0d0">A series of epistolary poems questioning the nature of memory and duration...</font></p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              
+              <tr>
+                <td width="33%" valign="top">
+                  <table border="1" bordercolor="#d0d0d0" cellpadding="15" cellspacing="0" width="100%">
+                    <tr>
+                      <td>
+                        <h3><font color="#e8e8e8"><a href="content/poem4.html"><font color="#e8e8e8">Ghost Hours</font></a></font></h3>
+                        <p><font color="#aaa">by Sameer Rao</font></p>
+                        <p><font color="#d0d0d0">Free verse exploration of insomnia and the strange clarity that comes with sleeplessness...</font></p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                
+                <td width="33%" valign="top">
+                  <table border="1" bordercolor="#d0d0d0" cellpadding="15" cellspacing="0" width="100%">
+                    <tr>
+                      <td>
+                        <h3><font color="#e8e8e8"><a href="content/poem5.html"><font color="#e8e8e8">Digital Pastoral</font></a></font></h3>
+                        <p><font color="#aaa">by Jayesh Chaudhari</font></p>
+                        <p><font color="#d0d0d0">Modern technology meets classical forms in this meditation on connection and isolation...</font></p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                
+                <td width="33%" valign="top">
+                  <table border="1" bordercolor="#d0d0d0" cellpadding="15" cellspacing="0" width="100%">
+                    <tr>
+                      <td>
+                        <h3><font color="#e8e8e8"><a href="content/poem6.html"><font color="#e8e8e8">Underwater Dreams</font></a></font></h3>
+                        <p><font color="#aaa">by Rohan Mehta</font></p>
+                        <p><font color="#d0d0d0">Surreal imagery explores the liminal space between consciousness and sleep...</font></p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              
+              <tr>
+                <td width="33%" valign="top">
+                  <table border="1" bordercolor="#d0d0d0" cellpadding="15" cellspacing="0" width="100%">
+                    <tr>
+                      <td>
+                        <h3><font color="#e8e8e8"><a href="content/krish.html"><font color="#e8e8e8">The Quiet Path</font></a></font></h3>
+                        <p><font color="#aaa">by Krish</font></p>
+                        <p><font color="#d0d0d0">An atmospheric poem exploring the stillness of the midnight hours.</font></p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                
+                <td width="33%" valign="top">
+                  <table border="1" bordercolor="#d0d0d0" cellpadding="15" cellspacing="0" width="100%">
+                    <tr>
+                      <td>
+                        <h3><font color="#e8e8e8">Coming Soon</font></h3>
+                        <p><font color="#d0d0d0">Additional poetry works will be added to expand the Litverse collection...</font></p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                
+                <td width="33%" valign="top">
+                  <!-- Empty cell to balance the layout -->
+                </td>
+              </tr>
+            </table>
+          </section>
+          
+          <br><br>
+          
+          <section>
+            <center>
+              <h2><font color="#e8e8e8">fiction</font></h2>
+            </center>
+            
+            <!-- 3x3 Fiction Grid -->
+            <table width="100%" cellspacing="15" cellpadding="0">
+              <tr>
+                <td width="33%" valign="top">
+                  <table border="1" bordercolor="#d0d0d0" cellpadding="15" cellspacing="0" width="100%">
+                    <tr>
+                      <td>
+                        <h3><font color="#e8e8e8"><a href="content/story1.html"><font color="#e8e8e8">The Thirteenth Window</font></a></font></h3>
+                        <p><font color="#aaa">by Arun Dev</font></p>
+                        <p><font color="#d0d0d0">An architect discovers that perception shapes reality when windows begin appearing where none should exist...</font></p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                
+                <td width="33%" valign="top">
+                  <table border="1" bordercolor="#d0d0d0" cellpadding="15" cellspacing="0" width="100%">
+                    <tr>
+                      <td>
+                        <h3><font color="#e8e8e8"><a href="content/book1.html"><font color="#e8e8e8">A City of Fog</font></a></font></h3>
+                        <p><font color="#aaa">by Keerthana V</font></p>
+                        <p><font color="#d0d0d0">In a city where weather dictates reality, a mapmaker searches for streets that exist only in mist...</font></p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                
+                <td width="33%" valign="top">
+                  <table border="1" bordercolor="#d0d0d0" cellpadding="15" cellspacing="0" width="100%">
+                    <tr>
+                      <td>
+                        <h3><font color="#e8e8e8"><a href="content/story2.html"><font color="#e8e8e8">The Librarian's Rebellion</font></a></font></h3>
+                        <p><font color="#aaa">by Nisha Singh</font></p>
+                        <p><font color="#d0d0d0">When books begin rewriting themselves, one librarian must choose between order and truth...</font></p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              
+              <tr>
+                <td width="33%" valign="top">
+                  <table border="1" bordercolor="#d0d0d0" cellpadding="15" cellspacing="0" width="100%">
+                    <tr>
+                      <td>
+                        <h3><font color="#e8e8e8"><a href="content/nandini.html"><font color="#e8e8e8">Echoes of the City</font></a></font></h3>
+                        <p><font color="#aaa">by Nandini</font></p>
+                        <p><font color="#d0d0d0">A quiet, reflective short story exploring solitude in the urban landscape.</font></p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                
+                <td width="33%" valign="top">
+                  <table border="1" bordercolor="#d0d0d0" cellpadding="15" cellspacing="0" width="100%">
+                    <tr>
+                      <td>
+                        <h3><font color="#e8e8e8">Coming Soon</font></h3>
+                        <p><font color="#d0d0d0">Additional written fiction will be added to expand the Litverse collection...</font></p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                
+                <td width="33%" valign="top">
+                  <!-- Empty cell to balance the layout -->
+                </td>
+              </tr>
+            </table>
+          </section>
+          
+        </td>
+        <td width="15%">
+          <!-- Removed Move to Top button as requested -->
+        </td>
+      </tr>
+    </table>
+  </main>
+
+  <footer>
+    <br>
+    <center>
+      <!-- Elegant horizontal line -->
+      <svg width="300" height="2" viewBox="0 0 300 2">
+        <line x1="0" y1="1" x2="300" y2="1" stroke="#666" stroke-width="1"/>
+      </svg>
+    </center>
+    <br>
+    <center>
+      <h1 style="font-family:'Pirata One',cursive; font-weight:normal; letter-spacing:0.1em; margin:0;">
+        <a href="index.html" style="text-decoration:none; color:inherit; display:inline-block; width:100%;">
+          <font color="#e8e8e8">L &nbsp; I &nbsp; T &nbsp; V &nbsp; E &nbsp; R &nbsp; S &nbsp; E</font>
+        </a>
+      </h1>
+      <p style="font-family:'Josefin Sans',sans-serif; font-weight:300;"><font color="#d0d0d0"><a href="index.html"><font color="#ccc">Home</font></a> · <a href="read.html"><font color="#ccc">Read</font></a> · <a href="write.html"><font color="#ccc">Write</font></a></font></p>
+      <p style="font-family:'Josefin Sans',sans-serif; font-weight:300;"><font color="#d0d0d0">Words without boundaries</font></p>
+      <p style="font-family:'Josefin Sans',sans-serif; font-weight:300;"><font color="#aaa"><small>Lightweight · Est. 2025</small></font></p>
+    </center>
+    <br>
+  </footer>
+
+</body>
+</html>
