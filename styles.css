@@ -100,3 +100,11 @@ a:active {
 input, textarea {
     outline: none;
 }
+
+/* Equalize card heights in grid rows */
+td[valign="top"] {
+    height: 1px;
+}
+td[valign="top"] > table {
+    height: 100%;
+}
